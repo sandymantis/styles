@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input, .search-container button {
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.search-container button {
+    cursor: pointer;
+}
