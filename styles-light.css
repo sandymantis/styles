@@ -8,3 +8,19 @@
   --fontSizes-medium: 16px;
   --fontSizes-large: 24px;
 }
+
+.button-primary {
+  background-color: var(--colors-primary);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-secondary {
+  background-color: var(--colors-secondary);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
