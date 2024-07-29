@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Search Component</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/single-spa/lib/system/single-spa.min.js"></script>
+</head>
+<body>
+    <div id="search-component-container"></div>
+
+    <script type="systemjs-importmap">
+        {
+            "imports": {
+                "search-component": "/search-component.js"
+            }
+        }
+    </script>
+    <script type="module">
+        import * as singleSpa from 'single-spa';
+
+        singleSpa.registerApplication(
+            'search-component',
+            () => System.import('search-component'),
+            location => location.pathname.startsWith('/')
+        );
+
+        singleSpa.start();
+    </script>
+</body>
+</html>
